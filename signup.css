@@ -1,0 +1,227 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #f0f2f5;
+  color: #1c1e21;
+}
+
+.signup-header { 
+  display: flex; 
+  justify-content: center; 
+  padding: 5px 0 0; 
+}
+
+.brand-container {
+  text-align: center;
+  margin: 112px 0 36px;
+  margin-top: -1%;
+}
+
+.brand {
+  width: 302.77px;
+  height: 100px;
+  top: 0;
+} 
+
+
+/* Centered card */
+.signup-main { 
+  display: flex; 
+  justify-content: center; 
+  padding: 5px 0px 0px; 
+}
+
+.signup-card {
+  width: 432px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+.signup-card h2 {
+margin: -9px 0 4px; 
+  text-align: center; 
+  font-size: 25px ; 
+  font-weight: 600; 
+}
+
+.signup-card .muted { 
+  margin: 0 0 14px; 
+  text-align: center; 
+  color: #606770; 
+  font-size: 15px; 
+}
+
+/* Form */
+.signup-form { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+.name-row { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px; 
+}
+
+.signup-form input,
+.signup-form select {
+    border-radius: 4px;
+    color: #1c1e21;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    height: 36px;
+    line-height: 20px;
+    border: 1px solid #dddfe2;
+    padding-left: 11px;
+}
+  
+.signup-form input:focus,
+.signup-form select:focus { 
+  outline: none; 
+  border-color: #1877f2; 
+  box-shadow: 0 0 0 2px #e7f3ff; 
+}
+
+.label { 
+  font-size: 12px; 
+  color: #606770; 
+  margin: 6px 0 2px; 
+  display: flex; 
+  align-items: center; 
+  gap: 4px; 
+}
+
+.hint { 
+  width: 18px; 
+  height: 18px; 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  background: #e4e6eb; 
+  border-radius: 50%; 
+  color: #4b4f56; 
+  font-size: 12px; 
+}
+
+.dob-row { display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; gap: 10px; 
+}
+
+.gender-row { display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; gap: 10px; 
+}
+.radio { display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 8px 10px; 
+    border: 1px solid #dddfe2; 
+    border-radius: 6px; 
+    background: #fff; 
+}
+.radio input[type="radio"] { 
+    width: 18px;
+     height: 18px;
+      margin: 0;
+     }
+.radio-label {
+     font-size: 15px; 
+     color: #1c1e21; 
+    }
+
+.small { 
+    font-size: 11px; 
+    color: #606770; 
+    line-height: 1.34; 
+    margin: 2px 0; 
+}
+.small a { 
+    color: #1877f2; 
+    text-decoration: none; 
+}
+.small a:hover { 
+    text-decoration: underline; 
+}
+.signup-btn {
+     width: 194px; 
+     margin: 8px auto 0; 
+     padding: 10px; 
+     border: 0; 
+     border-radius: 6px; 
+     background: #42b72a; color: #fff; 
+     font-weight: 700; 
+     font-size: 17px; 
+     cursor: pointer;
+    }
+.signup-btn:hover { background: #36a420; 
+}
+
+.center-link {
+     text-align: center; 
+     margin: 16px 0 4px; 
+    }
+.center-link a {
+     color: #1877f2; 
+     text-decoration: none; 
+     font-size: 17px; 
+    }
+.center-link a:hover {
+     text-decoration: underline; 
+    }
+
+/* Footer (simple) */
+.site-footer { 
+    background: #fff; 
+    padding: 30px 0; 
+    color: #8a8d91; 
+    font-size: 12px;
+    margin-top: 70px;
+ }
+.site-footer .links { 
+    max-width: 980px; 
+    margin: 0 auto; 
+    padding: 0 16px; 
+}
+.site-footer .divider { 
+    height: 1px; 
+    background: #dddfe2;
+     max-width: 980px; 
+     margin: 8px auto; 
+    }
+.site-footer a {
+     color: #8a8d91;
+     text-decoration: none; 
+     display: inline-block; 
+     padding: 0 8px; 
+     white-space: nowrap; 
+    }
+.site-footer a:hover { 
+    text-decoration: underline; 
+}
+.site-footer .language-picker { 
+    background: none; 
+    border: 1px solid #ccd0d5; 
+    color: #4b4f56; 
+    border-radius: 2px; 
+    font-size: 12px; 
+    line-height: 18px; 
+    padding: 0 8px; 
+    cursor: pointer; 
+    font-weight: 600; 
+    vertical-align: middle; 
+}
+.site-footer small { display: block; 
+    max-width: 980px; 
+    margin: 20px auto 0; 
+    padding: 0 16px; 
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .signup-card { width: 94%; }
+  .name-row { grid-template-columns: 1fr; }
+}

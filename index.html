@@ -7,33 +7,46 @@
     <title>Facebook – log in or sign up</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Extra styles for layout matching screenshot */
-        .fb-main-flex {
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f0f2f5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .fb-main-outer {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .fb-main-inner {
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 80vh;
             max-width: 1100px;
             margin: 0 auto;
+            width: 100%;
+            flex: 1;
+            padding-top: 30px;
+            padding-bottom: 40px;
         }
         .fb-left {
             flex: 1;
             margin-right: 40px;
             min-width: 400px;
         }
-        .fb-logo-big {
-            color: #1877f2;
-            font-size: 56px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            letter-spacing: -2px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+         .fb-logo-big {
+            height: 106px;
+            margin: -28px;
+         }
+     
+        
         .fb-desc {
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
             font-size: 28px;
-            font-weight: normal;
-            color: #1c1e21;
+            font-weight: 400;
             line-height: 32px;
+            width: 500px;
         }
         .fb-right {
             flex: 1;
@@ -54,7 +67,7 @@
         }
         .fb-login-box input[type="text"],
         .fb-login-box input[type="password"] {
-            width: 100%;
+            width: 91%;
             padding: 14px;
             margin-bottom: 12px;
             border: 1px solid #dddfe2;
@@ -123,10 +136,12 @@
             font-weight: bold;
         }
         @media (max-width: 900px) {
-            .fb-main-flex {
+            .fb-main-inner {
                 flex-direction: column;
                 align-items: center;
                 margin: 0 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
             .fb-left, .fb-right {
                 min-width: 300px;
@@ -143,7 +158,7 @@
     <div class="fb-main-outer">
         <div class="fb-main-inner">
             <div class="fb-left">
-                <h1 class="fb-logo-big">facebook</h1>
+                <img  class="fb-logo-big" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="facebook">
                 <h2 class="fb-desc">Facebook helps you connect and share with the people in your life.</h2>
             </div>
             <div class="fb-right">
@@ -163,14 +178,54 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="footer-langs">
-            English (UK) · ಕನ್ನಡ · मराठी · తెలుగు · हिन्दी · தமிழ் · മലയാളം · বাংলা · ગુજરાતી · ਪੰਜਾਬੀ
-        </div>
-        <div class="footer-links">
-            Sign Up · Log in · Messenger · Facebook Lite · Video · Meta Pay · Meta Store · Meta Quest · Instagram · Threads · Voting Information Centre · Privacy Policy · Privacy Centre · About · Create ad · Create Page · Developers · Careers · Cookies · AdChoices · Terms · Help · Contact uploading and non-users
-        </div>
-        <div class="footer-meta">Meta © 2025</div>
+    <footer class="site-footer">
+      <div class="links">
+        <a href="#">English (UK)</a>
+        <a href="#">Español</a>
+        <a href="#">Français (France)</a>
+        <a href="#">Português (Brasil)</a>
+        <a href="#">Italiano</a>
+        <a href="#">Deutsch</a>
+        <a href="#">العربية</a>
+        <a href="#">हिन्दी</a>
+        <a href="#">中文(简体)</a>
+        <a href="#">日本語</a>
+        <button class="language-picker">+</button>
+      </div>
+      <div class="divider"></div>
+      <div class="links">
+        <a href="#">Sign Up</a>
+        <a href="#">Log in</a>
+        <a href="#">Messenger</a>
+        <a href="#">Facebook Lite</a>
+        <a href="#">Watch</a>
+        <a href="#">Places</a>
+        <a href="#">Games</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Meta Pay</a>
+        <a href="#">Oculus</a>
+        <a href="#">Portal</a>
+        <a href="#">Instagram</a>
+        <a href="#">Bulletin</a>
+        <a href="#">Fundraisers</a>
+        <a href="#">Services</a>
+        <a href="#">Voting Information Centre</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Privacy Centre</a>
+        <a href="#">Groups</a>
+        <a href="#">About</a>
+        <a href="#">Create ad</a>
+        <a href="#">Create Page</a>
+        <a href="#">Developers</a>
+        <a href="#">Careers</a>
+        <a href="#">Cookies</a>
+        <a href="#">AdChoices</a>
+        <a href="#">Terms</a>
+        <a href="#">Help</a>
+        <a href="#">Contact uploading and non-users</a>
+      </div>
+      <small>Meta © 2025</small>
     </footer>
+    <script src="first.js"></script>
 </body>
 </html>

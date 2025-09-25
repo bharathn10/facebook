@@ -132,23 +132,52 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-.footer {
-    margin: 40px auto 0 auto;
-    max-width: 900px;
-    text-align: center;
-    font-size: 13px;
-    color: #737373;
-    padding-bottom: 20px;
+.site-footer { 
+    background: #fff; 
+    padding: 30px 0; 
+    color: #8a8d91; 
+    font-size: 12px;
+    margin-top: 96px;
+ }
+.site-footer .links { 
+    max-width: 980px; 
+    margin: 0 auto; 
+    padding: 0 16px; 
 }
-.footer-langs {
-    margin-bottom: 10px;
+.site-footer .divider { 
+    height: 1px; 
+    background: #dddfe2;
+     max-width: 980px; 
+     margin: 8px auto; 
+    }
+.site-footer a {
+     color: #8a8d91;
+     text-decoration: none; 
+     display: inline-block; 
+     padding: 0 8px; 
+     white-space: nowrap; 
+    }
+.site-footer a:hover { 
+    text-decoration: underline; 
 }
-.footer-links {
-    margin-bottom: 10px;
+.site-footer .language-picker { 
+    background: none; 
+    border: 1px solid #ccd0d5; 
+    color: #4b4f56; 
+    border-radius: 2px; 
+    font-size: 12px; 
+    line-height: 18px; 
+    padding: 0 8px; 
+    cursor: pointer; 
+    font-weight: 600; 
+    vertical-align: middle; 
 }
-.footer-meta {
-    color: #737373;
+.site-footer small { display: block; 
+    max-width: 980px; 
+    margin: 20px auto 0; 
+    padding: 0 16px; 
 }
+
 @media (max-width: 900px) {
     .fb-main-inner {
         flex-direction: column;
@@ -258,7 +287,7 @@ body {
 }
 
 .footer {
-    margin: 40px auto 0 auto;
+    margin: 133px auto 0 auto;
     max-width: 900px;
     text-align: center;
     font-size: 13px;
@@ -371,3 +400,4 @@ body {
         padding: 0 10px;
     }
 }
+
